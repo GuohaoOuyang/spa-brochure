@@ -1,0 +1,183 @@
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,245,235,1) 0%,rgba(255,245,235,0) 100%);
+}
+
+.team {
+    height:80vh;
+    width: 100vw;
+    background: rgb(255,245,235);
+    // background: red;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    position: relative;
+    // z-index: -1;
+    img {
+        width:30vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        // z-index: -1;
+    }
+    &__content {
+        z-index: 1;
+        &__title{
+            height: 10vh;
+            width: 60vw;
+            display: flex;
+            // justify-content: center;
+            align-items: flex-start;
+            // background: chartreuse;
+            margin: 5% 20% 0%;
+            h3{
+                font-family: 'Piazzolla', sans-serif;
+                text-align: center;
+                color: var(--primary-color);
+            }
+        }
+        &__sub {
+            height: 10vh;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            // background: salmon;
+            margin: 2% 20% 2%;
+            p {
+                font-family: var(--p-second);
+                text-align: left;
+                line-height: 2rem;
+                color: var(--primary-color);
+            }
+        }
+
+    }
+    &__sliderBox {
+        height: 25vh;
+        width: 60%;
+        // background: chocolate;
+        margin: 0% 20% 5%;
+        overflow: hidden;
+        position: relative;
+
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 25vh;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+            // background: red;
+        }
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+        &::before {
+            left: 0;
+        }
+
+        &__track {
+            align-items: center;
+            position: relative;
+            height:25vh;
+            display: flex;
+            width: calc(220px * 12);
+            // background: red;
+            animation: teamSlide 20s linear infinite;
+
+            .item {
+                width: 220px;
+                height: 25vh;
+                // background: sandybrown;
+                position: relative;
+                // border: 1px solid red;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imagebox {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                }
+                img {
+                    width: 100%;
+                }
+                p {
+                    color: var(--primary-color);
+                    font-size: 0.8rem;
+                }
+                
+            }
+        }
+        &__track:hover {
+            animation-play-state: paused;
+        }
+    }
+
+}
+
+@keyframes teamSlide {
+	0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-220px * 6))}
+}
+
+@media screen and (max-width:768px) {
+    .team {
+        height:80vh;
+        width: 100vw;
+        // background: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__content {
+            &__title{
+                height: 8vh;
+                width: 80vw;
+                display: flex;
+                margin: 0;
+                justify-content: flex-start;
+                align-items: center;
+                // background: chartreuse;
+                h3{
+                    font-size: 2rem;
+                }
+            }
+            &__sub {
+                height: 10vh;
+                width: 80vw;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                // background: salmon;
+                margin: 0;
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1.6rem;
+
+                }
+            }
+    
+        }
+        &__sliderBox {
+            height: 20vh;
+            width: 80%;
+            // background: chocolate;
+            margin: 0% 20% 5%;
+            overflow: hidden;
+            position: relative;
+        }
+
+    }    
+}    

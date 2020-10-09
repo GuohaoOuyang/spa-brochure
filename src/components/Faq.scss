@@ -1,0 +1,111 @@
+.faq {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: 1fr ;
+    grid-column-gap: 2vw;
+    justify-content: center;
+    align-content: center;
+    background: var(--primary-background);
+    padding-left: 15vw;
+    padding-right: 5vw;
+    overflow: hidden;
+    z-index: 2;
+    &__title {
+        color:var(--primary-color);
+        grid-column: 1/3;
+        h3 {
+            font-family: var(--title-primary);
+            text-align: left;
+            // padding-left: 10vw;
+        }
+    }
+    &__column1 {
+        width: 40vw;
+        // background: turquoise;
+
+    }
+    &__column2 {
+        width: 40vw;
+        // background: red;
+    }
+    .collapsible {
+        border: none;
+        box-shadow: none;
+        width: 35vw;
+    }
+    .collapsible-header {
+        background: transparent;
+        border: none;
+        text-align: left;
+        font-family: 'Karla', sans-serif;
+        font-size: 1.2rem;
+        color: var(--primary-color);
+    }
+    .collapsible-body {
+        background: transparent;
+        border: none;
+        text-align: left;
+        font-family: 'Karla', sans-serif;
+        font-size: 1rem;
+        color: var(--primary-color);
+        line-height: 1.6rem;
+        // background: lightcoral;
+        padding-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .faq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        // padding-top: 10vh;
+        // background: red;
+        
+        &__title {
+            width: 100vw;
+            h3 {
+                font-family: var(--title-primary);
+                text-align: left;
+                font-size: 2rem;
+            }
+        }
+        &__column1 {
+            width: 100vw;
+            // background: coral;
+            .collapsible {
+                border: none;
+                box-shadow: none;
+                width: 80vw;
+            }
+            .collapsible-header {
+                font-size: 1rem;
+            }
+            .collapsible-body {
+                font-size: 0.8rem;
+            }
+        }
+        &__column2 {
+            // width: 100vw;
+            // // background: coral;
+            // .collapsible {
+            //     border: none;
+            //     box-shadow: none;
+            //     width: 80vw;
+            // }
+            // .collapsible-header {
+            //     font-size: 1rem;
+            // }
+            // .collapsible-body {
+            //     font-size: 0.8rem;
+            // }
+            display: none;
+        }
+    }
+}

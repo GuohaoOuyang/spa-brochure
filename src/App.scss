@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'castledown';
+  src: url(./components/utils/font/castledown-heavy.woff.ttf) format('truetype');
+}
+
+:root {
+  --primary-color :rgb(14,52,96);
+  --primary-background: rgb(255,245,235);
+  --title-primary: 'Piazzolla', sans-serif;
+  --title-second: 'castledown', sans-serif;
+  --p-primary: 'Karla', sans-serif;
+  --p-second: 'Rubik', sans-serif;
+  --fill-background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+  --royal-blue: linear-gradient(to right, #355C7D, #6C5B7B,#C06C84);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+

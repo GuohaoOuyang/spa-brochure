@@ -1,0 +1,366 @@
+
+
+.navbar {
+    background-color: transparent;;
+    min-height: 6vh;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+    transition: top 0.3s ease, background-color 0.5s linear;
+    overflow: hidden;
+  }  
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .logo {
+    color:#0e3460;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    flex: 5;
+    align-items: center;
+    justify-self: start;
+  }
+
+  .nav-section  {
+      display: flex;
+      flex: 5;
+      justify-content: flex-end;
+      align-items: center;
+      width: 60vw;
+  }
+
+  .nav-section > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav-menu {
+    display: grid;
+    flex: 8;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    margin-right: 1rem;
+  }
+
+  .social-media {
+    display: grid;
+    flex: 2;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 5px;
+    list-style: none;
+    text-align: center;
+  }
+
+  .smLogo  {
+    display: block;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    height: 100%;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .gradientIcon svg * {
+    fill: url(#rg);
+  }
+
+  .nav-links {
+    color: #0e3460;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: var(--p-primary);
+  }
+
+  .nav-links::after {
+    content: '';
+    height: 8px;
+    left: 5px;
+    top: 18px;
+    width: 0;
+    position: absolute;
+    background: #f3675a;
+    transition: width 0.3s ease-out;
+    opacity: 0.4;
+  }
+
+  .nav-links:hover::after {
+    width: 100% ;
+  }
+
+  #active::after {
+    content: '';
+    height: 8px;
+    left: 5px;
+    top: 18px;
+    width: 80%;
+    position: absolute;
+    background: #f3675a;
+    transition: width 0.3s ease-out;
+    opacity: 0.4;
+  }
+
+  .menu-icon, .setPlain {
+      display: none;
+  }
+
+@media screen and (max-width: 960px) {
+  // * {
+  //   font-family: 'castledown', sans-serif;
+  // }
+
+  
+  /* set menu-icon box */
+  .navbar .menu-icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1.2rem;
+    background: inherit;
+    margin-right: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+/* draw bars */
+
+  .navbar .menu-icon > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #0e3460;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+
+  .navbar .menu-icon > div::before,
+  .navbar .menu-icon > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top:-10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+
+  .navbar .menu-icon > div::after {
+    top: 10px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    width: 10vw;
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+  }
+
+
+  /* set materialize checkbox to plain text and postion it op top of bars */
+  [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    pointer-events: all;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin-top: 0.3rem;
+    margin-right: 2.3rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  /* toggle animation */
+
+  [type="checkbox"]:checked + .menu-icon > div {
+    transform: rotate(135deg);
+  }
+  
+  [type="checkbox"]:checked + .menu-icon > div:before,
+  [type="checkbox"]:checked + .menu-icon > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  /* rotate on hover */
+  [type="checkbox"]:checked:hover + .menu-icon > div {
+    transform: rotate(225deg);
+  }
+
+  /* show menu */
+  [type="checkbox"]:checked ~ .nav-section {
+    visibility: visible;
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+  }
+
+  [type="checkbox"]:checked ~ .nav-section > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+  }
+  [type="checkbox"]:checked ~ .nav-section > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+  }
+  [type="checkbox"]:checked ~ * .nav-A {
+    animation-name: navLinkFade;
+    animation-delay: 0.1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  [type="checkbox"]:checked ~ * .nav-B {
+    animation-name: navLinkFade;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  [type="checkbox"]:checked ~ * .nav-C{
+    animation-name: navLinkFade;
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  [type="checkbox"]:checked ~ * .nav-D {
+    animation-name: navLinkFade;
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  [type="checkbox"]:checked ~ * .nav-E {
+    animation-name: navLinkFade;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  /* mobile nav section layout */
+
+  .nav-section  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+
+  .navbar .nav-section > div {
+    background: #fceee1;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+
+  .navbar .nav-section > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .navbar .nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .navbar .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90vw;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .navbar .nav-section > div > div > ul > li {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .nav-links:hover::after {
+    width: 0 ;
+  }
+
+  #active::after{
+    display: none;
+  }
+  
+  .nav-links {
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    -webkit-background-clip: text;
+    color: transparent;
+  } 
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}

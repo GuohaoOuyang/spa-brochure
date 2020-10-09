@@ -1,0 +1,146 @@
+// Animation
+@keyframes scroll1 {
+	0% { transform: translateX(1200px); }
+    100% { transform: translateX(-945px)}
+}
+@keyframes scroll2 {
+	0% { transform: translateX(-480px); }
+    100% { transform: translateX(1390px)}
+}
+@keyframes scroll3 {
+	0% { transform: translateX(1490px); }
+    100% { transform: translateX(-435px)}
+}
+@keyframes clockwiseSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes anticlockwiseSpin {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,245,235,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+%shared-main {
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height:20vh;
+    display: flex;
+
+}
+
+%shared-gear {
+    padding: 0.8rem 1.5rem;
+    height: 15vh;
+    width: auto;
+}
+
+%shared-font {
+    font-family: 'castledown', sans-serif;
+    color: #0e3460;
+    padding: 0.8rem 1.5rem 2.5rem;
+}
+
+.slider {
+    height:100vh;
+    width: 100%;
+    background: rgb(255,245,235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__box {
+        height: 60vh;
+        background:rgb(255,245,235);
+        // margin: auto;
+        // position: relative;
+        // width: 100vw;
+        // overflow: hidden;
+
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 60vh;
+            position: absolute;
+            width: 100px;
+            z-index: 2;
+        }
+        &::after {
+            right: 0;
+            top: 20vh;
+            transform: rotateZ(180deg);
+        }
+        &::before {
+            left: 0;
+        }
+
+        &__track1 {
+            @extend %shared-main;
+            width: 4290px;
+            direction: ltr;
+            animation: scroll1 20s linear infinite;
+            // transform: translateX(1200px);
+            
+            .slide {
+
+                .slidegear {
+                    @extend %shared-gear;
+                    animation: anticlockwiseSpin 7s linear infinite;
+                }
+                h1 {
+                    @extend %shared-font;
+                }
+            }
+        }
+
+        &__track2{
+            @extend %shared-main;
+            width: 3740px;
+            direction: ltr;
+            animation: scroll2 20s linear infinite;
+            // transform: translateX(-480px);
+
+            .slide {
+
+                .slidegear {
+                    @extend %shared-gear;
+                    animation: clockwiseSpin 7s linear infinite;
+                }
+                h1 {
+                    @extend %shared-font;
+                }
+            }
+        }
+        &__track3 {
+            @extend %shared-main;
+            animation: scroll3 20s linear infinite;
+            width: 3850px;
+            // transform: translateX(1490px);
+
+            .slide {
+
+                .slidegear {
+                    @extend %shared-gear;
+                    animation: anticlockwiseSpin 7s linear infinite;
+                }
+                h1 {
+                    @extend %shared-font;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,264 @@
+
+body {
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+
+%message-shared {
+    position: absolute;
+    height: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; 
+    overflow: hidden;
+}
+
+%share-m {
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    transform: scale(0.95) ;
+    transition: all 0.5s ease;
+}
+
+%share-n {
+    transform: scale(1);
+}
+
+
+.Parallax {
+
+    justify-content: center;
+    height: 140vh;
+    background: rgba(255,245,235, 1);
+    // background: rgb(43,57,78);
+    overflow: hidden;
+
+
+    &__background {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: rgb(43,57,78);
+        background-image: linear-gradient(to top,rgb(255,245,235),rgb(255,254,254));
+
+        &__cloud {
+            &__rightTC {
+                @extend %message-shared;
+                width: 48vw;
+                transform: translateX(70vw) translateY(5vh);
+            }
+
+            &__leftTC {
+                @extend %message-shared;
+                width: 40vw;
+                transform: translateX(-23vw) translateY(25vh);
+            }
+            &__leftBC {
+                @extend %message-shared;
+                width: 40vw;
+                transform: translateX(0) translateY(56vh);
+            }
+
+            &__rightBC {
+                @extend %message-shared;
+                width: 50vw;
+                transform: translateX(62vw) translateY(65vh);
+            }
+            
+        }
+        &__animation {
+            &__Dev{
+                @extend %share-m;
+                width: 28vw;
+                top:5vh;
+                left:10vw;
+            }
+            &__Dev:hover {
+                @extend %share-n;
+            }
+            &__videoDesign {
+                @extend %share-m;
+                top: 20vh;
+                right: 0;
+            }
+            &__videoDesign:hover {
+                @extend %share-n;
+            }
+            &__codeDebug {
+                @extend %share-m;
+                width: 22vw;
+                left: 3vw;
+                bottom: 0;
+            }
+            &__codeDebug:hover {
+                @extend %share-n;
+            }
+            &__dog {
+                @extend %share-m;
+                width: 13vw;
+                left: 23vw;
+                bottom: -5vh;
+            }
+            &__dog:hover {
+                @extend %share-n;
+            }
+            &__corgi {
+                @extend %share-m;
+                width: 10vw;
+                right: 15vw;
+                top: 10vh;
+            }
+            &__corgi:hover {
+                @extend %share-n;
+            }
+        }
+        &__content {
+            width: 45rem;
+            height: auto;
+            margin-top: -5rem;
+            margin-left: 15vw;
+            padding-left: 5vw;
+            // background: royalblue;
+            margin-right: 5vw;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            &__title {
+                margin-bottom: -20px;
+                h1 {
+                    font-family:var(--title-primary);
+                    font-size: 5rem;
+                    background: var(--royal-blue);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+            }
+
+            &__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                & > h6 {
+                    font-family: var(--p-primary);
+                    color: #0e3460;
+                }
+                .input-field {
+                    // background: red;
+                    height: 3rem;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .email-input {
+                        border: none; 
+                        border: 1px solid #29b6f6;
+                        border-radius: 10rem;
+                        height: 3rem;
+                        width: 25rem;
+                        
+                    }
+                    ::placeholder {
+                        color:#4fc3f7;
+                        font-size: 0.8rem;
+                        text-align: left;
+                        padding-left: 2rem;
+                        font-family: var(--p-second);
+                    }
+                    .email-input:focus {
+                        outline: none;
+                    }
+                    .btn-large {
+                        margin-left: 2rem;
+                    }
+                    .material-icons {
+                        font-size: 2.6rem;
+                    }
+
+                }
+                .sponsor {
+                    h6 {
+                        font-family: var(--p-primary);
+                        color: #4fc3f7;
+                        cursor: pointer;
+                        position: relative;
+                        display: inline-block;
+                    }
+                    h6::after {
+                        content: '';
+                        height: 8px;
+                        left: 0;
+                        top: 15px;
+                        width: 0;
+                        position: absolute;
+                        background: #ff8f00;
+                        border-radius: 8px;
+                        transition: width 0.3s ease-out;
+                        opacity: 0.4;
+                    }
+                    h6:hover::after {
+                        width: 100% ;
+                      }
+                }
+            }
+        }
+
+
+    }
+    
+    &__content {
+        width: 100vw;
+        height: 140vh;
+        position: absolute;
+        // background: rgb(255,245,235);
+        // overflow: hidden;
+
+        &__cloud {
+            &__leftBLC {
+                @extend %message-shared;
+                width: 38vw;
+                transform: translateX(32%) translateY(98vh);
+                z-index: 3;
+            }
+            &__leftBRC {
+                @extend %message-shared;
+                width: 48vw;
+                transform: translateX(127%) translateY(96vh);
+                z-index: 3;
+            }
+            &__rightBRC {
+                @extend %message-shared;
+                width: 37vw;
+                transform: translateX(137%) translateY(100vh);
+                z-index: 1;
+            }
+            &__rightBLC {
+                @extend %message-shared;
+                width: 48vw; 
+                transform: translateX(-22%) translateY(88vh);
+                z-index: 1;
+            }
+            &__rightBMC {
+                @extend %message-shared;
+                width: 40vw;
+                transform: translateX(75%) translateY(100vh);
+                z-index: 1;
+            }
+        }
+    }
+
+}    
+
+
+
