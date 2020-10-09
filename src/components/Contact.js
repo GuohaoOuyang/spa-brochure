@@ -63,7 +63,7 @@ export function Contact() {
                 </form>
             </div>
             <div className="contact__map">
-                <LoadScript googleMapsApiKey="AIzaSyDBAcgy-Y4iGM5-XI8zclVhhgSU6oR4OSM" language="en">
+                <LoadScript googleMapsApiKey="YOUR OWN GOOGLE MAP API KEY" language="en">
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={defaultCenter}
