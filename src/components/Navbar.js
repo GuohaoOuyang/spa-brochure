@@ -22,6 +22,8 @@ export function Navbar () {
     const contactPos = contact.offsetTop;
     const faq = document.querySelector('#Faq');
     const faqPos = faq.offsetTop;
+    const footer = document.querySelector('#Footer');
+    const footerPos = footer.offsetTop;
 
 
     window.addEventListener('scroll', ()=> {
@@ -58,12 +60,18 @@ export function Navbar () {
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
-      } else {
+      } else if( win >= faqPos && win < footerPos) {
         document.querySelector('.nav-E').setAttribute('id', 'active');
         document.querySelector('.nav-A').removeAttribute('id', 'active');
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
+      } else if (win >= footerPos) {
+        document.querySelector('.nav-A').removeAttribute('id', 'active');
+        document.querySelector('.nav-B').removeAttribute('id', 'active');
+        document.querySelector('.nav-C').removeAttribute('id', 'active');
+        document.querySelector('.nav-D').removeAttribute('id', 'active');
+        document.querySelector('.nav-E').removeAttribute('id', 'active');
       }
 
       // hide navbar background color when reach top

@@ -26,7 +26,7 @@ export function Faq() {
                         </span></div>
                     </li>
                     <li>
-                    <div className="collapsible-header">Linking Your Riot Account to Twitch.TV</div>
+                    <div className="collapsible-header">Linking Your Inova Account to Twitch.TV</div>
                     <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                     <li>

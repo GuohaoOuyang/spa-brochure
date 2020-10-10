@@ -79,7 +79,7 @@ export function About() {
             </div>
             <div className="about__content">
                 <div className="about__content__dialog">
-                    <p>Riot Games was founded in 2006 to develop, publish, and support the most player-focused games in 
+                    <p>Inova Games was founded in 2006 to develop, publish, and support the most player-focused games in 
                         the world. In 2009, we released our debut title, League of Legends, to worldwide acclaim. League has 
                         gone on to be the most-played PC game in the world and a key driver of the explosive growth of esports. 
                     </p>
