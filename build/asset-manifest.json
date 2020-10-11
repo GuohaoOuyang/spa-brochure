@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2674bf34.chunk.css",
+    "main.css": "/static/css/main.20043dc3.chunk.css",
     "main.js": "/static/js/main.f053ccf3.chunk.js",
     "main.js.map": "/static/js/main.f053ccf3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d499fc4.js",
@@ -8,9 +8,9 @@
     "static/js/2.66bd852d.chunk.js": "/static/js/2.66bd852d.chunk.js",
     "static/js/2.66bd852d.chunk.js.map": "/static/js/2.66bd852d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fbf17972a8299c2ad857f95a16df17e8.js": "/precache-manifest.fbf17972a8299c2ad857f95a16df17e8.js",
+    "precache-manifest.c94cbc5e26fb6d999bbfdffd5fa317c6.js": "/precache-manifest.c94cbc5e26fb6d999bbfdffd5fa317c6.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2674bf34.chunk.css.map": "/static/css/main.2674bf34.chunk.css.map",
+    "static/css/main.20043dc3.chunk.css.map": "/static/css/main.20043dc3.chunk.css.map",
     "static/js/2.66bd852d.chunk.js.LICENSE.txt": "/static/js/2.66bd852d.chunk.js.LICENSE.txt",
     "static/media/CoralGear.png": "/static/media/CoralGear.7e2398c6.png",
     "static/media/Ekko_left.jpeg": "/static/media/Ekko_left.c3417738.jpeg",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.4d499fc4.js",
     "static/js/2.66bd852d.chunk.js",
-    "static/css/main.2674bf34.chunk.css",
+    "static/css/main.20043dc3.chunk.css",
     "static/js/main.f053ccf3.chunk.js"
   ]
 }

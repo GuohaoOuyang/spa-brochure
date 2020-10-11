@@ -142,7 +142,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 10;
     width: 60px;
     height: 60px;
     padding: 1.2rem;
@@ -206,7 +206,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 11;
     margin-top: 0.3rem;
     margin-right: 2.3rem;
     cursor: pointer;
@@ -292,6 +292,7 @@
     justify-content: center;
     visibility: hidden;
     transform: translateX(100%);
+    z-index: 9;
   }
 
   .navbar .nav-section > div {
