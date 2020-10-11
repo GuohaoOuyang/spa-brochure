@@ -30,6 +30,9 @@
         width: 40vw;
         // background: red;
     }
+    .back {
+        display: none;
+    }
     .collapsible {
         border: none;
         box-shadow: none;
@@ -79,6 +82,7 @@
         &__column1 {
             width: 100vw;
             // background: coral;
+            z-index: 1;
             .collapsible {
                 border: none;
                 box-shadow: none;
@@ -106,6 +110,16 @@
             //     font-size: 0.8rem;
             // }
             display: none;
+        }
+        .back {
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            // background: rebeccapurple;
+            display: flex;
+            background: url('./utils/images/watercolorr.png')no-repeat center center;
+            background-size: contain;
+            z-index: 0;
         }
     }
 }

@@ -77,6 +77,7 @@ export function Faq() {
                     </li>
                 </ul>
             </div>
+            <div className="back"></div>
         </div>
     )
 }

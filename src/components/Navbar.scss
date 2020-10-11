@@ -126,12 +126,16 @@
       display: none;
   }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   // * {
   //   font-family: 'castledown', sans-serif;
   // }
 
-  
+  // .navbar {
+  //   position: relative;
+  //   overflow-x: hidden;
+  //   width: 100%;
+  // }
   /* set menu-icon box */
   .navbar .menu-icon {
     display: flex;
@@ -317,7 +321,7 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-right: 5rem;
     align-items: flex-start;
     justify-content: center;
@@ -330,7 +334,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 90vw;
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-right: 5rem;
   }
 

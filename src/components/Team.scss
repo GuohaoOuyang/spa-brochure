@@ -9,6 +9,7 @@
     // background: red;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     // justify-content: center;
     // align-items: center;
     position: relative;
@@ -177,6 +178,17 @@
             margin: 0% 20% 5%;
             overflow: hidden;
             position: relative;
+
+            &::before,
+            &::after {
+                @include white-gradient;
+                content: "";
+                height: 20vh;
+                position: absolute;
+                width: 100px;
+                z-index: 2;
+                // background: red;
+            }
         }
 
     }    

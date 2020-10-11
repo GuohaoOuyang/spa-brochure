@@ -33,6 +33,7 @@
             grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 4vw;
             // background: chartreuse;
+            overflow: hidden;
             width: 100%;
             margin-top: 2vh;
             span {
@@ -105,13 +106,21 @@
 }
 
 @media screen and (max-width: 768px) {
+    .footer {
+        height: 100vh;
+        width: 100%;
+        background: var(--primary-background);
+        position: relative;
+        overflow-x: hidden;
+        z-index: 1;
+    }
     .footer__container__title > h1 {
         font-size: 3rem;
     }
     .footer__container__footer > ul {
         margin-top: 4vh;
         span {
-            font-size: 0.6rem;
+            font-size: 0.5rem;
         }
         span::after {
             top: 8px;
@@ -119,7 +128,7 @@
         }
     }
     .footer-copyright {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
 }

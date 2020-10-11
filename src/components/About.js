@@ -43,7 +43,7 @@ export function About() {
 
         window.addEventListener('scroll', ()=> {
             let win = window.pageYOffset;
-            console.log(acPos);
+            // console.log(acPos);
             if(acPos-100 <= win) {
                 counters.forEach(counter=>{
                     const updateCount = () => {

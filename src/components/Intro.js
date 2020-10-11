@@ -158,7 +158,7 @@ export function Intro() {
                     <label htmlFor="email"></label>
                     <input id="email" type="email" 
                     placeholder="Enter your email to get the latest release" className="browser-default email-input" />
-                    <a className="btn-floating btn-large waves-effect waves-light light-blue accent-4" onClick={send} href="/"><i className="material-icons">arrow_forward</i></a>
+                    <a id="btnn" className="btn-floating btn-large waves-effect waves-light light-blue accent-4" onClick={send} href="/"><i className="material-icons">arrow_forward</i></a>
                 </div>
                 <div className="sponsor">
                     <h6>Interested in joining?</h6>

@@ -28,7 +28,6 @@ body {
 
 
 .Parallax {
-
     justify-content: center;
     height: 140vh;
     background: rgba(255,245,235, 1);
@@ -222,7 +221,7 @@ body {
         height: 140vh;
         position: absolute;
         // background: rgb(255,245,235);
-        // overflow: hidden;
+        overflow: hidden;
 
         &__cloud {
             &__leftBLC {
@@ -260,5 +259,107 @@ body {
 
 }    
 
+@media screen and (max-width: 768px) {
+    .Parallax__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 
+        &__animation {
+
+            &__Dev{
+                width: 50vw;
+                top:15vh;
+                left:0;
+            }
+            &__videoDesign {
+                width: 40vw;
+                top: 15vh;
+                right: -5vw;
+            }
+            &__codeDebug {
+                width: 42vw;
+                left: 3vw;
+                bottom: 5vh;
+            }
+            &__dog {
+                width: 33vw;
+                left: 23vw;
+                bottom: -2vh;
+            }
+            &__corgi {
+                width: 30vw;
+                right: 15vw;
+                top: 6vh;
+            }
+        }
+    }
+    .Parallax__background__content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__title {
+            margin-bottom: 0;
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 0;
+            }
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & > h6 {
+                margin-top: 10%;
+                font-size: 1rem;
+                text-align: center;
+            }
+            .input-field {
+                display: none;
+            }
+            .sponsor {
+                display: none;
+            }
+        }    
+    }
+    .Parallax__content__cloud {
+        &__leftBLC {
+            width: 38vw;
+            transform: translateX(32%) translateY(118vh);
+            z-index: 3;
+        }
+        &__leftBRC {
+
+            width: 48vw;
+            transform: translateX(127%) translateY(116vh);
+            z-index: 3;
+        }
+        &__rightBRC {
+
+            width: 37vw;
+            transform: translateX(137%) translateY(120vh);
+            z-index: 1;
+        }
+        &__rightBLC {
+
+            width: 48vw; 
+            transform: translateX(-22%) translateY(108vh);
+            z-index: 1;
+        }
+        &__rightBMC {
+
+            width: 40vw;
+            transform: translateX(75%) translateY(120vh);
+            z-index: 1;
+        }
+    }
+}
 

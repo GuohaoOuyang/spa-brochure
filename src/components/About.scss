@@ -26,6 +26,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
 
     &__animation {
@@ -252,7 +253,7 @@
                 height: 20rem;
                 // background: lightcoral;
                 border-radius: 25px;
-                z-index: 999;
+                z-index: 1;
 
                 iframe {
                     width: 40rem;
@@ -274,22 +275,40 @@
         // background: blue;
         display: grid;
         grid-template-columns: 1fr;
+        overflow: hidden;
     }
     .about__content__dialog {
+        padding: 10%;
+        margin: 0;
         p {
-            font-size: 0.8rem;
+            font-size: 0.5rem;
         }
     }
     .about__content__section1 {
+        padding: 10%;
+        margin: 0;
+        margin-top: 25%;
+        overflow: hidden;
+        // background: coral;
         h3 {
             font-size: 3rem;
             margin-bottom: 2rem;
         }
         p {
-            font-size: 0.8rem;
+            font-size: 0.5rem;
         }
     }
     .about__content__section2 {
+        padding: 10%;
+        margin: 0;
+        margin-top: 25%;
+        height: 50vh;
+        overflow: hidden;
+        // background: chocolate;
+        &__title {
+            display: flex;
+            align-items: center;
+        }
         h3:nth-child(1) {
             font-size: 3rem;
         }
@@ -297,18 +316,23 @@
             font-size: 3rem;
         }
         p {
-            font-size: 0.8rem;
+            font-size: 0.5rem;
         }
     }
-    .section3 {
-        & > h4 {
-            margin-bottom: -10%;
+    #animatedCounter {
+        padding: 0;
+        margin: 0;
+        margin-top: -30%;
+        // background: chartreuse;
+        height: 40vh;
+        h4 {
+            margin-bottom: 0;
             font-size: 1.5rem;
             #dream {
                 font-size: 3rem;
             }
         }
-        &__box {
+        .section3__box {
             h4 {
                 font-size: 1rem;
             }
@@ -317,12 +341,17 @@
             }
         }
     }
+
     #video {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: #0e3460;
+        margin-top: -20%;
+        // background: coral;
+        height: 60vh;
+        padding: 0;
 
         h2 {
             text-align: left;

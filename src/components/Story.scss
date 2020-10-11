@@ -37,6 +37,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
     .rainbow {
         position: absolute;
@@ -579,6 +580,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     .story__title {
         height: 15vh;
@@ -643,7 +645,7 @@
 
             .bigger_box {
                 width: 22%;
-                height: 50%;
+                height: 40%;
                 margin:0;
                 padding:0;
                 margin-left: 4%;
@@ -657,7 +659,7 @@
                         width: calc(663px/2);
                         height:calc(1033px/2);
                         position: absolute;
-                        left: -6rem;
+                        left: -8rem;
                         top: -2rem;
                         transition: all 1s ease;
                     }
@@ -666,14 +668,14 @@
                         height: calc(1200px/2);
                         position: absolute;
                         top: 0rem;
-                        left: -10rem;
+                        left: -15rem;
                         transition: all 1s ease;
                     }
                     .ig-C{
                         width: calc(810px/3);
                         height: calc(1234px/3);
                         position: absolute;
-                        left:-4.5rem;
+                        left:-6.5rem;
                         transition: all 1s ease;
                     }
      
@@ -699,33 +701,33 @@
                     margin-bottom: 10%;
 
                     .bg-A{
-                        left: -13rem;
-                        top: -16rem;
+                        left: -8rem;
+                        top: -5rem;
                     }
                     .bg-B{
-                        left: -29rem;
+                        left: -34rem;
                         top: -2rem;
                     }
                     .bg-C{
                         left: -4rem;
-                        top: -3rem;
+                        top: -4rem;
                     }
                 }
                 .story__slider__demo__bottom{
                     width: 100%;
                     height: 30%;
                     .cg-A{
-                        left: -4rem;
+                        left: -3.7rem;
                         bottom: -4rem;
                     
                     }   
                     .cg-B{
-                        left: -2rem;
+                        left: -10rem;
                         top: -4rem;
                     }  
                     .cg-C{
                         left: -14rem;
-                        top: -1rem;
+                        top: -4rem;
 
                     }  
                 }
@@ -733,7 +735,7 @@
             }
             &__right {
                 width: 22%;
-                height: 50%;
+                height: 40%;
                 margin-left: 0;
                 margin-right:4%;
                 // background: rgb(255,233,229);
@@ -745,8 +747,8 @@
 
                 .dg{
                     text-align: left;
-                    font-size: 0.8rem;
-                    line-height: 1.6rem;
+                    font-size: 0.5rem;
+                    line-height: 1.4rem;
                     padding-right: 20%;
                     padding-left: 5%;
                     left: 0;                                      
@@ -833,16 +835,23 @@
                 }
                                
                 p {
-                    font-size: 0.8rem;
+                    font-size: 0.5rem;
                 }
 
             }
         }
         &__indicator {
+            overflow: hidden;
+            div:nth-child(1) {
+                width: 12%;
+            }
+            div:nth-child(2) {
+                width: 68%;
+            }
             div:nth-child(3){
-                width: 15%;
+                width: 20%;
                 .prev, .next{
-                    font-size: 30px;
+                    font-size: 25px;
                 }
 
             }

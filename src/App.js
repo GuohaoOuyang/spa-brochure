@@ -16,15 +16,15 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          < Navbar />
-          < Intro />
+          <Navbar />
+          <Intro />
           <InfineteCarousel />
           <About />
           <Story />
           <Team />
           <Contact />
           <Faq />
-          <Footer />
+          <Footer /> 
         </Route>
       </Switch>
 
