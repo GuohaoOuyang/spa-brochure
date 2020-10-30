@@ -2,7 +2,7 @@
 InovaGame -- a refined web branding demo that demonstrate some fundamental javascript and css skills.
 
 ## Motivation
-Create a website that integrate all my recent learnt cool css tricks is my target. The idea is to keep a record of what I learnt as well as a showcase to demonstrate some of my dedcations.
+Create a website that integrate all my recent learnt cool css tricks is my target. The idea is to keep a record of what I learnt as well as a showcase to demonstrate some of my dedications.
 
 ## Code style
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
