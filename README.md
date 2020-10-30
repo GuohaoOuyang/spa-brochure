@@ -8,7 +8,11 @@ Create a website that integrate all my recent learnt cool css tricks is my targe
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-Include logo/demo screenshot etc.
+![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
+![animatedcounter](/src/components/utils/images/story1.png?raw=true "Optional Title")
+![carousel](/src/components/utils/images/item2.png?raw=true "Optional Title")
+![contact](/src/components/utils/images/contact.png?raw=true "Optional Title")
+![footer](/src/components/utils/images/footer.png?raw=true "Optional Title")
 
 ## Tech/framework used
 - [React](https://reactjs.org/)
