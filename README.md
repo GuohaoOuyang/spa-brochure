@@ -1,39 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project title
+InovaGame -- a refined web branding demo that demonstrate some fundamental javascript and css skills.
 
-## Some of Dependencies used in this App:
+## Motivation
+Create a website that integrate all my recent learnt cool css tricks is my target. The idea is to keep a record of what I learnt as well as a showcase to demonstrate some of my dedcations.
 
-### `lottie-web`
+## Code style
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+ 
+## Screenshots
+Include logo/demo screenshot etc.
 
-https://github.com/airbnb/lottie-web
+## Tech/framework used
+- [React](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Google Maps APIs](https://developers.google.com/maps/documentation)
+- [Lottie-web](https://github.com/airbnb/lottie-web)
+- [Materialize](https://materializecss.com/)
 
-### `react-google-maps/api`
+<b>Built with</b>
+- [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
 
-https://www.npmjs.com/package/@react-google-maps/api
+## Features
+- parallax scrolling
+- breathable web lottie animation
+- google map search with marker
+- infinite scrolling banner
+- gradient fill with svg and linear gradient
+- nav bar hide on scroll down, show on scroll up, auto detect scroll section
+- auto play carousel with manual control and visible animation timer
 
-### `materialize-css`
 
-https://github.com/Dogfalo/materialize
-
-### `node-sass`
-
-https://github.com/sass/node-sass
-
-## Available Scripts
-
-In the project directory, you can run:
+## Installation
+This project was bootstrapped with Create React App.
 
 ### `npm start`
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
+The page will reload if you make edits.
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -45,42 +50,19 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
 ### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+## Contribute
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Pull Requests are always welcome.
+
+When you edit the code, please run npm run test to check the formatting of your code before you git commit.
+
+
+## License
+
+MIT © [GuohaoOuyang]()
+
+
