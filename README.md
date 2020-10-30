@@ -6,6 +6,9 @@ Create a website that integrate all my recent learnt cool css tricks is my targe
 
 ## Code style
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
+## [Demo](https://inovagame.herokuapp.com/)
+The demo is hosted free by heroku, it might take a little bit longer to load :)
  
 ## Screenshots
 ![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
