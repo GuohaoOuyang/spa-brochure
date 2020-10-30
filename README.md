@@ -12,6 +12,7 @@ Create a website that integrate all my recent learnt cool css tricks is my targe
 ![animatedcounter](/src/components/utils/images/story1.png?raw=true "Optional Title")
 ![carousel](/src/components/utils/images/item2.png?raw=true "Optional Title")
 ![contact](/src/components/utils/images/contact.png?raw=true "Optional Title")
+![faq](/src/components/utils/images/faq.png?raw=true "Optional Title")
 ![footer](/src/components/utils/images/footer.png?raw=true "Optional Title")
 
 ## Tech/framework used
