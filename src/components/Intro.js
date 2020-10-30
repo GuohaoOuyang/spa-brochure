@@ -8,6 +8,8 @@ import codeDebug from './utils/animation/usability-testing.json';
 import dog from './utils/animation/dog.json';
 import rightCloud  from './utils/images/rightCloud.png';
 import leftCloud  from './utils/images/leftCloud.png';
+import arrow  from './utils/images/solid-arrow.svg';
+import * as Scroll from 'react-scroll';
 
 export function Intro() {
 
@@ -117,8 +119,19 @@ export function Intro() {
 
     },[])
 
+    let scroll = Scroll.animateScroll;
+
+    const scrollToTop = (e) => {
+      e.preventDefault();
+      scroll.scrollToTop();
+    }
+
     const renderContent = () => (
         <>
+        <div className='Parallax__content__arrow'  >
+            <img src ={arrow} alt='' className='solidArrow' id="arrow" onClick={scrollToTop}></img>
+            <p id="arrowSub">back to top</p>
+        </div>
         <div className="Parallax__content__cloud">
             <img src ={leftCloud} alt='' className='Parallax__content__cloud__leftBLC' ></img>
             <img src ={leftCloud} alt='' className='Parallax__content__cloud__leftBRC' ></img>
@@ -180,7 +193,6 @@ export function Intro() {
           >
             {backgroundContent()}
           </div>
-
 
           <div className="Parallax__content" >
               {renderContent()}

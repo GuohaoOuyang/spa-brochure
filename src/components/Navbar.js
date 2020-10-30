@@ -24,7 +24,8 @@ export function Navbar () {
     const faqPos = faq.offsetTop;
     const footer = document.querySelector('#Footer');
     const footerPos = footer.offsetTop;
-
+    const arrows = document.querySelector('#arrow');
+    const arrowSub = document.querySelector('#arrowSub');
 
     window.addEventListener('scroll', ()=> {
       const win = window.pageYOffset;
@@ -36,42 +37,57 @@ export function Navbar () {
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
+        arrows.style.visibility = 'hidden';
+        arrowSub.style.visibility = 'hidden';
+
       } else if (win >= aboutPos && win < storyPos) {
         document.querySelector('.nav-A').setAttribute('id', 'active');
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
+        arrows.style.visibility = 'hidden';
+        arrowSub.style.visibility = 'hidden';
       } else if (win >= storyPos && win < teamPos) {
         document.querySelector('.nav-B').setAttribute('id', 'active');
         document.querySelector('.nav-A').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
+        arrows.style.visibility = 'hidden';
+        arrowSub.style.visibility = 'hidden';
       } else if ( win >= teamPos && win < contactPos) {
         document.querySelector('.nav-C').setAttribute('id', 'active');
         document.querySelector('.nav-A').removeAttribute('id', 'active');
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
+        arrows.style.visibility = 'hidden';
+        arrowSub.style.visibility = 'hidden';
       } else if ( win >= contactPos && win < faqPos) {
         document.querySelector('.nav-D').setAttribute('id', 'active');
         document.querySelector('.nav-A').removeAttribute('id', 'active');
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
+        arrows.style.visibility = 'hidden';
+        arrowSub.style.visibility = 'hidden';
       } else if( win >= faqPos && win < footerPos) {
         document.querySelector('.nav-E').setAttribute('id', 'active');
         document.querySelector('.nav-A').removeAttribute('id', 'active');
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
+        arrows.style.visibility = 'visible';
+        arrowSub.style.visibility = 'visible';
       } else if (win >= footerPos) {
         document.querySelector('.nav-A').removeAttribute('id', 'active');
         document.querySelector('.nav-B').removeAttribute('id', 'active');
         document.querySelector('.nav-C').removeAttribute('id', 'active');
         document.querySelector('.nav-D').removeAttribute('id', 'active');
         document.querySelector('.nav-E').removeAttribute('id', 'active');
+        arrows.style.visibility = 'visible';
+        arrowSub.style.visibility = 'visible';
       }
 
       // hide navbar background color when reach top

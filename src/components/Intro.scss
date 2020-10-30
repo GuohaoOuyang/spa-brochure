@@ -220,8 +220,32 @@ body {
         width: 100vw;
         height: 140vh;
         position: absolute;
-        // background: rgb(255,245,235);
         overflow: hidden;
+
+        &__arrow {
+            z-index:4;
+            position: fixed;
+            right: 10%;
+            bottom: 20%;
+             
+            & > p {
+                color: rgb(117,184,211);
+                transition: all 0.5s ease;
+            }
+
+            .solidArrow{
+                width: 4rem;
+                opacity: 0.5;
+                visibility: hidden;
+                transition: all 0.5s ease;
+                cursor: pointer;
+            }
+
+            .solidArrow:hover {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
 
         &__cloud {
             &__leftBLC {

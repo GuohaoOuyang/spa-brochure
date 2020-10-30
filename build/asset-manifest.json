@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.20043dc3.chunk.css",
-    "main.js": "/static/js/main.f053ccf3.chunk.js",
-    "main.js.map": "/static/js/main.f053ccf3.chunk.js.map",
+    "main.css": "/static/css/main.cd7acbe5.chunk.css",
+    "main.js": "/static/js/main.d26425bc.chunk.js",
+    "main.js.map": "/static/js/main.d26425bc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d499fc4.js",
     "runtime-main.js.map": "/static/js/runtime-main.4d499fc4.js.map",
-    "static/js/2.66bd852d.chunk.js": "/static/js/2.66bd852d.chunk.js",
-    "static/js/2.66bd852d.chunk.js.map": "/static/js/2.66bd852d.chunk.js.map",
+    "static/js/2.2adfa484.chunk.js": "/static/js/2.2adfa484.chunk.js",
+    "static/js/2.2adfa484.chunk.js.map": "/static/js/2.2adfa484.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c94cbc5e26fb6d999bbfdffd5fa317c6.js": "/precache-manifest.c94cbc5e26fb6d999bbfdffd5fa317c6.js",
+    "precache-manifest.8df769f675a8c4a5756c4cb6560b35c1.js": "/precache-manifest.8df769f675a8c4a5756c4cb6560b35c1.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.20043dc3.chunk.css.map": "/static/css/main.20043dc3.chunk.css.map",
-    "static/js/2.66bd852d.chunk.js.LICENSE.txt": "/static/js/2.66bd852d.chunk.js.LICENSE.txt",
+    "static/css/main.cd7acbe5.chunk.css.map": "/static/css/main.cd7acbe5.chunk.css.map",
+    "static/js/2.2adfa484.chunk.js.LICENSE.txt": "/static/js/2.2adfa484.chunk.js.LICENSE.txt",
     "static/media/CoralGear.png": "/static/media/CoralGear.7e2398c6.png",
     "static/media/Ekko_left.jpeg": "/static/media/Ekko_left.c3417738.jpeg",
     "static/media/Jhin.png": "/static/media/Jhin.9a2aa9ee.png",
@@ -33,12 +33,13 @@
     "static/media/kaisatop.jpeg": "/static/media/kaisatop.2f4f5dd8.jpeg",
     "static/media/leftCloud.png": "/static/media/leftCloud.8a3f8f56.png",
     "static/media/rightCloud.png": "/static/media/rightCloud.ff3c8c56.png",
+    "static/media/solid-arrow.svg": "/static/media/solid-arrow.db1447c2.svg",
     "static/media/Faq.scss": "/static/media/watercolorr.7b161b9a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4d499fc4.js",
-    "static/js/2.66bd852d.chunk.js",
-    "static/css/main.20043dc3.chunk.css",
-    "static/js/main.f053ccf3.chunk.js"
+    "static/js/2.2adfa484.chunk.js",
+    "static/css/main.cd7acbe5.chunk.css",
+    "static/js/main.d26425bc.chunk.js"
   ]
 }
