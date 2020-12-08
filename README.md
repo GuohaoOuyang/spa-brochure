@@ -1,14 +1,14 @@
 ## Project title
-InovaGame -- a refined web branding demo that demonstrate some fundamental javascript and css skills.
+InovaGame(animated)
 
 ## Motivation
-Create a website that integrate all my recent learnt cool css tricks is my target. The idea is to keep a record of what I learnt as well as a showcase to demonstrate some of my dedications.
+a place to integrate some of my UI/UX ideas.
 
 ## Code style
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 ## [Demo](https://inovagame.herokuapp.com/)
-The demo is hosted free by heroku, it might take a little bit longer to load :)
+The demo is hosted free by heroku, it might take a little bit longer to load.
  
 ## Screenshots
 ![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
