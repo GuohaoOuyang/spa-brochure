@@ -1,8 +1,8 @@
 ## Project title
 InovaGame(animated)
 
-## Motivation
-a place to integrate some of my UI/UX ideas.
+## Description
+a SPA brochure focused on a pleasing front end UI/UX design.
 
 ## Code style
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
