@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/spa-brochure-inovagame/static/css/main.a7d0ca3d.chunk.css",
-    "main.js": "/spa-brochure-inovagame/static/js/main.e70ef6f0.chunk.js",
-    "main.js.map": "/spa-brochure-inovagame/static/js/main.e70ef6f0.chunk.js.map",
+    "main.js": "/spa-brochure-inovagame/static/js/main.8d1e09ce.chunk.js",
+    "main.js.map": "/spa-brochure-inovagame/static/js/main.8d1e09ce.chunk.js.map",
     "runtime-main.js": "/spa-brochure-inovagame/static/js/runtime-main.25631a3a.js",
     "runtime-main.js.map": "/spa-brochure-inovagame/static/js/runtime-main.25631a3a.js.map",
     "static/js/2.292bda53.chunk.js": "/spa-brochure-inovagame/static/js/2.292bda53.chunk.js",
     "static/js/2.292bda53.chunk.js.map": "/spa-brochure-inovagame/static/js/2.292bda53.chunk.js.map",
     "index.html": "/spa-brochure-inovagame/index.html",
-    "precache-manifest.974748ed40a6391a5c897bd774d06ed1.js": "/spa-brochure-inovagame/precache-manifest.974748ed40a6391a5c897bd774d06ed1.js",
+    "precache-manifest.ecccd3602d7bb4430a4eb7452d9c2d13.js": "/spa-brochure-inovagame/precache-manifest.ecccd3602d7bb4430a4eb7452d9c2d13.js",
     "service-worker.js": "/spa-brochure-inovagame/service-worker.js",
     "static/css/main.a7d0ca3d.chunk.css.map": "/spa-brochure-inovagame/static/css/main.a7d0ca3d.chunk.css.map",
     "static/js/2.292bda53.chunk.js.LICENSE.txt": "/spa-brochure-inovagame/static/js/2.292bda53.chunk.js.LICENSE.txt",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.25631a3a.js",
     "static/js/2.292bda53.chunk.js",
     "static/css/main.a7d0ca3d.chunk.css",
-    "static/js/main.e70ef6f0.chunk.js"
+    "static/js/main.8d1e09ce.chunk.js"
   ]
 }

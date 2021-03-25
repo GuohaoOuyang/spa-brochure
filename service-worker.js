@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spa-brochure-inovagame/precache-manifest.974748ed40a6391a5c897bd774d06ed1.js"
+  "/spa-brochure-inovagame/precache-manifest.ecccd3602d7bb4430a4eb7452d9c2d13.js"
 );
 
 self.addEventListener('message', (event) => {

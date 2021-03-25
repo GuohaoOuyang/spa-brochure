@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36d9cc9aad3139ba9e83f5cf37bbd04d",
+    "revision": "f45bafbde9b8a45aa7fe7e6bb2b4ecd9",
     "url": "/spa-brochure-inovagame/index.html"
   },
   {
-    "revision": "2e3e081401cd206117ed",
+    "revision": "03db4bc2a4dc30135a3b",
     "url": "/spa-brochure-inovagame/static/css/main.a7d0ca3d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spa-brochure-inovagame/static/js/2.292bda53.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e3e081401cd206117ed",
-    "url": "/spa-brochure-inovagame/static/js/main.e70ef6f0.chunk.js"
+    "revision": "03db4bc2a4dc30135a3b",
+    "url": "/spa-brochure-inovagame/static/js/main.8d1e09ce.chunk.js"
   },
   {
     "revision": "980dcfaddfa9405d11fa",
