@@ -1,4 +1,5 @@
 {
+  "homepage": "http://guohaoouyang.github.io/spa-brochure-inovagame",
   "name": "demo-web",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^3.1.0",
     "lottie-web": "^5.7.3",
     "materialize-css": "^1.0.0-rc.2",
     "node-sass": "^4.14.1",
@@ -31,7 +33,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
