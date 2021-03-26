@@ -8,7 +8,6 @@ a SPA brochure focused on a pleasing front end UI/UX design.
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 ## [Demo](https://guohaoouyang.github.io/spa-brochure-inovagame/)
-The demo is hosted free by heroku, it might take a little bit longer to load.
 
 ## Tech/framework used
 - [React](https://reactjs.org/)
