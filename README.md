@@ -21,17 +21,21 @@
 ## Tech/framework used
 - [React](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
-- [Google Maps Platforms](https://developers.google.com/maps/documentation)
 - [Lottie-web](https://github.com/airbnb/lottie-web)
 - [Materialize](https://materializecss.com/)
+- [Google Maps Platforms](https://developers.google.com/maps/documentation)
 
 **Built with**
 - [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
 
 ## Installation
 
+This project was bootstrapped with Create React App.
+   
 `npm install`
+   
 `npm start`
+
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
@@ -55,8 +59,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ## Contributing
 
 Pull Requests are always welcome.
-For major changes, please open an issue first to discuss what you would like to change.
-
 
 ## License
 
