@@ -1,23 +1,13 @@
-## Project title
-InovaGame (animated web)
+## InovaGame
 
-## Description
-a SPA brochure focused on a pleasing front end UI/UX design.
-
-## Code style
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-## [Demo](https://guohaoouyang.github.io/spa-brochure-inovagame/)
+> a SPA brochure focused on a pleasing front end UI/UX design (animated web)
 
-## Tech/framework used
-- [React](https://reactjs.org/)
-- [Sass](https://sass-lang.com/)
-- [Google Maps APIs](https://developers.google.com/maps/documentation)
-- [Lottie-web](https://github.com/airbnb/lottie-web)
-- [Materialize](https://materializecss.com/)
+![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
 
-**Built with**
-- [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
+## Live Preview
+[Demo](https://guohaoouyang.github.io/spa-brochure-inovagame/)
 
 ## Features
 - parallax scrolling
@@ -27,14 +17,16 @@ a SPA brochure focused on a pleasing front end UI/UX design.
 - gradient fill with svg and linear gradient
 - nav bar hide on scroll down, show on scroll up, auto detect scroll section
 - auto play carousel with manual control and visible animation timer
- 
-## Screenshots
-![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
-![animatedcounter](/src/components/utils/images/story1.png?raw=true "Optional Title")
-![carousel](/src/components/utils/images/item2.png?raw=true "Optional Title")
-![contact](/src/components/utils/images/contact.png?raw=true "Optional Title")
-![faq](/src/components/utils/images/faq.png?raw=true "Optional Title")
-![footer](/src/components/utils/images/footer.png?raw=true "Optional Title")
+
+## Tech/framework used
+- [React](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Google Maps Platforms](https://developers.google.com/maps/documentation)
+- [Lottie-web](https://github.com/airbnb/lottie-web)
+- [Materialize](https://materializecss.com/)
+
+**Built with**
+- [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
 
 ## Installation
 This project was bootstrapped with Create React App.
