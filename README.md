@@ -2,7 +2,7 @@
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-> a SPA brochure focused on a pleasing front end UI/UX design (animated web)
+> A responsive SPA brochure aimed at providing an interactive front end UI/UX design.
 
 ![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
 
