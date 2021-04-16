@@ -7,7 +7,7 @@
 ![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
 
 ## Live Preview
-[Demo](https://guohaoouyang.github.io/spa-brochure-inovagame/)
+[Demo](https://guohaoouyang.github.io/spa-brochure/)
 
 ## Features
 - parallax scrolling
