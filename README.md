@@ -1,7 +1,5 @@
 ## InovaGame
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-
 > A responsive SPA brochure aimed at providing an interactive front end UI/UX design.
 
 ![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
@@ -51,10 +49,6 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 ## Contributing
 
