@@ -1,68 +1,84 @@
-## InovaGame
+# SPA Brochure
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+**_Table of Contents:_**
 
-> A responsive SPA brochure aimed at providing an interactive front end UI/UX design.
+- [SPA Brochure](#spa-brochure)
+  - [Live Preview](#live-preview)
+- [About](#about)
+  - [Features](#features)
+  - [Tech Stack](#tech-stack)
+- [Setup Guide](#setup-guide)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
 
 ![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
 
 ## Live Preview
-[Demo](https://guohaoouyang.github.io/spa-brochure/)
+
+**[Demo](https://guohaoouyang.github.io/spa-brochure/)**
+
+# About
+
+A responsive SPA brochure aimed at providing an interactive front end UI/UX design.
 
 ## Features
-- parallax scrolling
-- breathable web lottie animation
-- google map search with marker
-- infinite scrolling banner
-- gradient fill with svg and linear gradient
-- nav bar hide on scroll down, show on scroll up, auto detect scroll section
-- auto play carousel with manual control and visible animation timer
 
-## Tech/framework used
-- [React](https://reactjs.org/)
-- [Sass](https://sass-lang.com/)
-- [Lottie-web](https://github.com/airbnb/lottie-web)
-- [Materialize](https://materializecss.com/)
-- [Google Maps Platforms](https://developers.google.com/maps/documentation)
+- **Web lottie & infinite scroll banner:** The web-lottie will scale and start on hover
+  ![littie_hover](/src/components/utils/gifs/lottie_banner.gif)
+  <br>
 
-**Built with**
-- [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
+- **Animated counter**
+  ![animated_counter](/src/components/utils/gifs/animated_counter.gif)
+  <br>
 
-## Installation
+- **Detective nav bar:** nav bar will hide on scroll down, show on scroll up. Nav item will be rendered by scroll section
+  ![navbar](/src/components/utils/gifs/navbar.gif)
+  <br>
 
-This project was bootstrapped with Create React App.
-   
-`npm install`
-   
-`npm start`
+- **Carousels with both automotive and manual control**
+  ![ho_carousel](/src/components/utils/gifs/ho_carousel.gif)
+  ![ve_carousel](/src/components/utils/gifs/ve_carousel.gif)
+  <br>
 
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+- **Scrolling item pause on hover**
+  ![animated_counter](/src/components/utils/gifs/items.gif)
+  <br>
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+## Tech Stack
 
- `npm run build`
+Built with [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+|                                Highlights                                 |
+| :-----------------------------------------------------------------------: |
+|                       [React](https://reactjs.org/)                       |
+|                      [Sass](https://sass-lang.com/)                       |
+|            [Lottie-web](https://github.com/airbnb/lottie-web)             |
+|                [Materialize](https://materializecss.com/)                 |
+| [Google Maps Platforms](https://developers.google.com/maps/documentation) |
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Setup Guide
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
 
-### Deployment
+In order to run this project locally you **must** have [node.js](https://nodejs.org/en/) installed.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This project was built on the following node version.
 
-## Contributing
+```bash
+$ node --version
+v12.18.3
+```
 
-Pull Requests are always welcome.
+## Getting Started
 
-## License
+```bash
+git clone https://github.com/GuohaoOuyang/spa-brochure.git
+```
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+```bash
+npm install
+```
 
-
-
+```bash
+npm start
+```
