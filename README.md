@@ -11,8 +11,6 @@
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
 
-![frontpage](/src/components/utils/images/frontpage.png?raw=true "Optional Title")
-
 ## Live Preview
 
 **[Demo](https://guohaoouyang.github.io/spa-brochure/)**
@@ -27,8 +25,12 @@ A responsive SPA brochure aimed at providing an interactive front end UI/UX desi
   ![littie_hover](/src/components/utils/gifs/lottie_banner.gif)
   <br>
 
-- **Animated counter**
+- **Animated counter by scroll**
   ![animated_counter](/src/components/utils/gifs/animated_counter.gif)
+  <br>
+
+- **Responsive design with animated transition**
+  ![mobile](/src/components/utils/gifs/mobile.gif)
   <br>
 
 - **Detective nav bar:** nav bar will hide on scroll down, show on scroll up. Nav item will be rendered by scroll section
@@ -40,7 +42,7 @@ A responsive SPA brochure aimed at providing an interactive front end UI/UX desi
   ![ve_carousel](/src/components/utils/gifs/ve_carousel.gif)
   <br>
 
-- **Scrolling item pause on hover**
+- **Scrolling items paused on hover**
   ![animated_counter](/src/components/utils/gifs/items.gif)
   <br>
 
